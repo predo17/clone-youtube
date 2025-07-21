@@ -57,7 +57,7 @@ const Navbar = ({ toggleSidebar, paddingLeft }: NavbarProps)=> {
       </header>
     
       <div className={`mt-2 transition-all duration-300 ${paddingLeft}`}>
-        {location.pathname === '/' && <CategoryFilter />}{/*Como pode ser só isso kkkkk*/ }
+        {location.pathname === '/' && <CategoryFilter />}{/*para mostra somente na page home*/ }
       </div>
         
 

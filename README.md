@@ -78,13 +78,14 @@ export default tseslint.config([
 
 ```bash
 # Clone o repositório
-git clone https://github.com/pedro17/clone-youtube.git
+git clone https://github.com/predo17/clone-youtube.git
 
 # Acesse a pasta do projeto
 cd clone-youtube
 
 # Instale as dependências
 npm install
-
+npm i
 # Inicie o projeto
 npm run dev
+pnpm dev

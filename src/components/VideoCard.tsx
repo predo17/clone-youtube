@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { timeAgo, formatViews } from '../utils/formatHelpers'
@@ -67,21 +66,3 @@ const VideoCard = ({ video }: Props) => {
 }
 
 export default VideoCard
-
-
-
-// import type { FC } from 'react'
-
-// const VideoCard: FC = () => {
-//   return (
-//     <div className="rounded-xl overflow-hidden">
-//       <img src="https://placehold.co/320x180" alt="Video" className="w-full rounded-xl" />
-//       <div className="p-2">
-//         <h3 className="font-bold text-sm">Título do Vídeo</h3>
-//         <p className="text-xs text-gray-500">Nome do Canal</p>
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default VideoCard

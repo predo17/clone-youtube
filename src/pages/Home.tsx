@@ -12,7 +12,7 @@ const Home = () => {
 
   return (
     <div className="w-full">  
-      <main className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 gap-y-6">
+      <main className="p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 gap-y-6">
         {Array.isArray(videos) && videos.map((video) => (
           <VideoCard key={video.id} video={video} />
         ))}
@@ -22,18 +22,3 @@ const Home = () => {
 }
 
 export default Home
-
-// import type { FC } from 'react'
-// import VideoCard from '../components/VideoCard'
-
-// const Home: FC = () => {
-//   return (
-//       <main className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 gap-y-6">
-//         {[...Array(14)].map((_, i) => (
-//           <VideoCard key={i} />
-//         ))}
-//       </main>
-//   )
-// }
-
-// export default Home
