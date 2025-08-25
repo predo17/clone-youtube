@@ -21,6 +21,7 @@ O objetivo é replicar algumas funcionalidades principais da plataforma, como ex
 
 - [React](https://reactjs.org/)
 - [React Router DOM](https://reactrouter.com/)
+- [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Vite](https://vitejs.dev/)
 
