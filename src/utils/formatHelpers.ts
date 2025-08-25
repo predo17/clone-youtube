@@ -15,11 +15,7 @@ export const timeAgo = (dateString: string): string => {
   const hours = Math.floor(diff / 3600)
   const days = Math.floor(diff / 86400)
   const weeks = Math.floor(diff / 604800)
-  const months = Math.floor(diff / 2592000)
-  const years = Math.floor(diff / 31536000)
 
-  if (years > 0) return `há ${years} ano${years > 1 ? 's' : ''}`
-  if (months > 0) return `há ${months} mês${months > 1 ? 'es' : ''}`
   if (weeks > 0) return `há ${weeks} semana${weeks > 1 ? 's' : ''}`
   if (days > 0) return `há ${days} dia${days > 1 ? 's' : ''}`
   if (hours > 0) return `há ${hours} hora${hours > 1 ? 's' : ''}`

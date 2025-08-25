@@ -11,10 +11,20 @@ export const fetchPopularVideos = async () => {
 
 export const fetchChannelInfo = async (channelId: string) => {
   const res = await fetch(
-    `${BASE_URL}/channels?part=snippet&id=${channelId}&key=${API_KEY}`
+    `${BASE_URL}/channels?part=snippet,statistics&id=${channelId}&key=${API_KEY}`
   )
   const data = await res.json()
   return data.items[0]
+}
+
+export function formatSubscribers(count: number) {
+  if (count >= 1_000_000_000) {
+  } else if (count >= 1_000_000) {
+    return (count / 1_000_000).toFixed(3).replace(".0", "") + " mil"
+  } else if (count >= 1_000) {
+    return (count / 1_000).toFixed(2).replace(".0", "") + " m"
+  }
+  return count.toString()
 }
 
 export const fetchVideoDetails = async (videoId: string) => {

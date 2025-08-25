@@ -13,8 +13,8 @@ const categories = [
 
 const CategoryFilter = () => {
   return (
-    <main className="flex md:ml-3 pb-3 pr-3 w-full">
-      <div className="overflow-x-auto">
+    <main className="flex xl:ml-3 xl:pb-3 pr-3 w-full">
+      <div className="overflow-x-auto no-scrollbar">
         <div className="flex gap-4 mx-3">
           {categories.map((item, index) => (
             <button
